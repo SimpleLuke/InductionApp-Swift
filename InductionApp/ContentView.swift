@@ -21,6 +21,14 @@ struct ContentView: View {
     @State private var showingLoginScreen = false
     
     var body: some View {
+        if showingLoginScreen {
+            LoginView()
+        }else{
+            content
+        }
+    }
+    
+    var content: some View {
         NavigationStack {
             ZStack {
                 Color.blue
@@ -54,9 +62,6 @@ struct ContentView: View {
                     .cornerRadius(10)
                 }
             }
-            .navigationDestination(isPresented: $showingLoginScreen) {
-                LoginView()
-              }
         }
     }
 }
