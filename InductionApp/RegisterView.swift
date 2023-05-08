@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RegisterView.swift
 //  InductionApp
 //
 //  Created by Luke Lai on 08/05/2023.
@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-
-
-struct ContentView: View {
+struct RegisterView: View {
     private let userRequest = UserRequest()
     @State private var email = ""
     @State private var password = ""
@@ -43,7 +41,7 @@ struct ContentView: View {
                     Text("Lansdown")
                         .font(.largeTitle)
                         .bold()
-                    Text("Login")
+                    Text("Register")
                         .font(.title)
                         .bold()
                         .padding()
@@ -75,9 +73,9 @@ struct ContentView: View {
                     .background(Color.blue)
                     .cornerRadius(10)
                     HStack {
-                            Text("Don't have an account, register")
+                            Text("Already have an account? Sign in")
                                 .foregroundColor(.gray)
-                            NavigationLink(destination: RegisterView()) {
+                            NavigationLink(destination: ContentView()) {
                                 Text("here")
                                     .underline()
                                     .foregroundColor(.blue)
@@ -87,13 +85,11 @@ struct ContentView: View {
             }
         }
     }
-    
-    
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RegisterView()
     }
 }
+

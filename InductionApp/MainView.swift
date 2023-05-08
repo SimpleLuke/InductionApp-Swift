@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct MainView: View {
     var onLogout: () -> Void
     
     var body: some View {
