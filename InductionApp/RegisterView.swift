@@ -11,16 +11,12 @@ struct RegisterView: View {
     private let userRequest = UserRequest()
     @State private var email = ""
     @State private var password = ""
-    @State private var wrongEmail = 0
-    @State private var wrongPassword = 0
-    @State private var showingLoginScreen = false
-    @State var fetchResult = User(id: 0, name: "", email: "", joined: "")
+    @State private var name = ""
+    @State private var redirectLogin = false
     
     var body: some View {
-        if fetchResult.id != 0 {
-            MainView(onLogout: {
-                        fetchResult = User(id: 0, name: "", email: "", joined: "")
-                    })
+        if redirectLogin {
+            ContentView()
         }else{
             content
         }
@@ -50,18 +46,23 @@ struct RegisterView: View {
                         .frame(width: 300,height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                        .border(.red,width: CGFloat(wrongEmail))
+                    TextField("Name",text:$name)
+                        .padding()
+                        .frame(width: 300,height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
                     SecureField("Password",text:$password)
                         .padding()
                         .frame(width: 300,height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                        .border(.red,width: CGFloat(wrongPassword))
-                    Button("Login"){
-                        userRequest.loginUser(email: "marry@gmail.com", password: "1234") { user, error in
-                            if let user = user {
-                                fetchResult = user
-                                print(user)
+                    Button("Register"){
+                        userRequest.registerUser(email: email,name:name, password: password) { message, error in
+                            if let message = message {
+                                if message == "New user created"{
+                                    print(message)
+                                    redirectLogin = true
+                                }
                             } else if let error = error {
                                 // handle error here
                                 print("Error: \(error.localizedDescription)")

@@ -60,7 +60,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                         .border(.red,width: CGFloat(wrongPassword))
                     Button("Login"){
-                        userRequest.loginUser(email: "marry@gmail.com", password: "1234") { user, error in
+                        userRequest.loginUser(email:email, password:password) { user, error in
                             if let user = user {
                                 fetchResult = user
                                 print(user)
