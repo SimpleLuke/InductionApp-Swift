@@ -7,20 +7,7 @@
 
 import SwiftUI
 
-struct LoginView: View {
-    var onLogout: () -> Void
-    
-    var body: some View {
-        Text("This is the login view")
-        Button("logout"){
-            onLogout()
-        }
-        .foregroundColor(.white)
-        .frame(width: 300,height: 50)
-        .background(Color.blue)
-        .cornerRadius(10)
-    }
-}
+
 
 struct ContentView: View {
     @State private var email = ""
@@ -31,7 +18,7 @@ struct ContentView: View {
     @State var fetchResult = User(id: 0, name: "", email: "", joined: "")
     
     var body: some View {
-        if fetchResult.email == "marry@gmail.com" {
+        if fetchResult.id != 0 {
             LoginView(onLogout: {
                         fetchResult = User(id: 0, name: "", email: "", joined: "")
                     })
