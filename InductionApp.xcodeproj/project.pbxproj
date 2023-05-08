@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		116EDAB62A09674500A184C7 /* User.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB52A09674500A184C7 /* User.model.swift */; };
 		116EDAB82A0988A700A184C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB72A0988A700A184C7 /* LoginView.swift */; };
+		116EDABA2A098A0E00A184C7 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB92A098A0E00A184C7 /* UserRequest.swift */; };
 		11FDFEEB2A0938B6002A9DE3 /* InductionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */; };
 		11FDFEED2A0938B6002A9DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */; };
 		11FDFEEF2A0938B8002A9DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FDFEEE2A0938B8002A9DE3 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		116EDAB52A09674500A184C7 /* User.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.model.swift; sourceTree = "<group>"; };
 		116EDAB72A0988A700A184C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		116EDAB92A098A0E00A184C7 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		11FDFEE72A0938B6002A9DE3 /* InductionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InductionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InductionAppApp.swift; sourceTree = "<group>"; };
 		11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */,
 				11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */,
+				116EDAB92A098A0E00A184C7 /* UserRequest.swift */,
 				116EDAB72A0988A700A184C7 /* LoginView.swift */,
 				116EDAB52A09674500A184C7 /* User.model.swift */,
 				11FDFEEE2A0938B8002A9DE3 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				11FDFEED2A0938B6002A9DE3 /* ContentView.swift in Sources */,
 				11FDFEEB2A0938B6002A9DE3 /* InductionAppApp.swift in Sources */,
 				116EDAB82A0988A700A184C7 /* LoginView.swift in Sources */,
+				116EDABA2A098A0E00A184C7 /* UserRequest.swift in Sources */,
 				116EDAB62A09674500A184C7 /* User.model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

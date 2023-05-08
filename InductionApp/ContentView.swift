@@ -10,6 +10,7 @@ import SwiftUI
 
 
 struct ContentView: View {
+    private let userRequest = UserRequest()
     @State private var email = ""
     @State private var password = ""
     @State private var wrongEmail = 0
@@ -53,7 +54,15 @@ struct ContentView: View {
                         .cornerRadius(10)
                         .border(.red,width: CGFloat(wrongPassword))
                     Button("Login"){
-                        loadUser()
+                        userRequest.loginUser(email: "marry@gmail.com", password: "1234") { user, error in
+                            if let user = user {
+                                fetchResult = user
+                                print(user)
+                            } else if let error = error {
+                                // handle error here
+                                print("Error: \(error.localizedDescription)")
+                            }
+                        }
                     }
                     .foregroundColor(.white)
                     .frame(width: 300,height: 50)
@@ -64,38 +73,7 @@ struct ContentView: View {
         }
     }
     
-    func loadUser(){
-        guard let url = URL(string: "http://localhost:5000/users/signin") else {
-                    print("Invalid URL")
-                    return
-                }
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        
-        let body = ["email":email,"password":password]
-        let jsonData = try! JSONSerialization.data(withJSONObject: body, options: [])
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = jsonData
-        
-        let session = URLSession.shared
-        let task = session.dataTask(with: request){ data,response,error in
-            if let data = data{
-                do{
-                    if let jsonString = String(data: data, encoding: .utf8) {
-                        print(jsonString)
-                    }
-                    let user = try JSONDecoder().decode(User.self, from: data)
-                    print(user)
-                    DispatchQueue.main.async {
-                        fetchResult = user
-                    }
-                }catch{
-                    print("Error decoding JSON: \(error)")
-                }
-            }
-        }
-        task.resume()
-    }
+    
 }
 
 
