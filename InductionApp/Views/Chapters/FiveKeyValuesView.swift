@@ -12,7 +12,7 @@ struct FiveKeyValuesView: View {
     var body: some View {
         ScrollView(showsIndicators: true){
             VStack {
-                CircleImage(image: Image("the-hl-way"))
+                CircleImage(image: Image("5-key-values"))
                 
                 VStack(alignment: .leading) {
                     Text("The HL way")
