@@ -12,7 +12,7 @@ struct MainView: View {
     
     var body: some View {
         VStack{
-            Text("This is the login view")
+            ChapterList()
             Button("logout"){
                 onLogout()
             }

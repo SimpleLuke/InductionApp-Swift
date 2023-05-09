@@ -9,9 +9,17 @@ import SwiftUI
 
 struct ChapterList: View {
     var body: some View {
-        List(chapters) { chapter in
+        NavigationView{
+            List(chapters) { chapter in
+                NavigationLink{
+                    FiveKeyValuesView()
+                } label: {
                     ChapterRow(chapter: chapter)
                 }
+            }
+            .navigationTitle("Chapters")
+        }
+
     }
 }
 
