@@ -15,6 +15,11 @@
 		116EDACB2A09A03A00A184C7 /* User.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB52A09674500A184C7 /* User.model.swift */; };
 		116EDACD2A0A92E600A184C7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDACC2A0A92E600A184C7 /* CircleImage.swift */; };
 		116EDAD12A0A939400A184C7 /* FiveKeyValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAD02A0A939400A184C7 /* FiveKeyValuesView.swift */; };
+		116EDAD72A0A9F2700A184C7 /* chaptersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 116EDAD62A0A9F2700A184C7 /* chaptersData.json */; };
+		116EDAD92A0A9FB800A184C7 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAD82A0A9FB800A184C7 /* Chapter.swift */; };
+		116EDADB2A0AA06400A184C7 /* ChapterModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDADA2A0AA06400A184C7 /* ChapterModelData.swift */; };
+		116EDADE2A0AA0CB00A184C7 /* ChapterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDADD2A0AA0CB00A184C7 /* ChapterRow.swift */; };
+		116EDAE02A0AA3DF00A184C7 /* ChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDADF2A0AA3DF00A184C7 /* ChapterList.swift */; };
 		11FDFEEB2A0938B6002A9DE3 /* InductionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */; };
 		11FDFEED2A0938B6002A9DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */; };
 		11FDFEEF2A0938B8002A9DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FDFEEE2A0938B8002A9DE3 /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		116EDAC12A099F1600A184C7 /* UserRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		116EDACC2A0A92E600A184C7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		116EDAD02A0A939400A184C7 /* FiveKeyValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveKeyValuesView.swift; sourceTree = "<group>"; };
+		116EDAD62A0A9F2700A184C7 /* chaptersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chaptersData.json; sourceTree = "<group>"; };
+		116EDAD82A0A9FB800A184C7 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		116EDADA2A0AA06400A184C7 /* ChapterModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterModelData.swift; sourceTree = "<group>"; };
+		116EDADD2A0AA0CB00A184C7 /* ChapterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterRow.swift; sourceTree = "<group>"; };
+		116EDADF2A0AA3DF00A184C7 /* ChapterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterList.swift; sourceTree = "<group>"; };
 		11FDFEE72A0938B6002A9DE3 /* InductionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InductionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InductionAppApp.swift; sourceTree = "<group>"; };
 		11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +74,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		116EDAD32A0A9E4F00A184C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */,
+				116EDAD02A0A939400A184C7 /* FiveKeyValuesView.swift */,
+				116EDABB2A098D4700A184C7 /* RegisterView.swift */,
+				116EDAB72A0988A700A184C7 /* MainView.swift */,
+				116EDADD2A0AA0CB00A184C7 /* ChapterRow.swift */,
+				116EDADF2A0AA3DF00A184C7 /* ChapterList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		116EDAD42A0A9E8300A184C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				116EDAD82A0A9FB800A184C7 /* Chapter.swift */,
+				116EDADA2A0AA06400A184C7 /* ChapterModelData.swift */,
+				116EDACC2A0A92E600A184C7 /* CircleImage.swift */,
+				116EDAB52A09674500A184C7 /* User.model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		116EDAD52A0A9E8E00A184C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				116EDAB92A098A0E00A184C7 /* UserRequest.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		116EDADC2A0AA0A900A184C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				116EDAD62A0A9F2700A184C7 /* chaptersData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		11FDFEDE2A0938B6002A9DE3 = {
 			isa = PBXGroup;
 			children = (
@@ -84,14 +134,11 @@
 		11FDFEE92A0938B6002A9DE3 /* InductionApp */ = {
 			isa = PBXGroup;
 			children = (
-				116EDACC2A0A92E600A184C7 /* CircleImage.swift */,
+				116EDADC2A0AA0A900A184C7 /* Resources */,
+				116EDAD42A0A9E8300A184C7 /* Models */,
+				116EDAD32A0A9E4F00A184C7 /* Views */,
 				11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */,
-				11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */,
-				116EDAD02A0A939400A184C7 /* FiveKeyValuesView.swift */,
-				116EDABB2A098D4700A184C7 /* RegisterView.swift */,
-				116EDAB92A098A0E00A184C7 /* UserRequest.swift */,
-				116EDAB72A0988A700A184C7 /* MainView.swift */,
-				116EDAB52A09674500A184C7 /* User.model.swift */,
+				116EDAD52A0A9E8E00A184C7 /* Controllers */,
 				11FDFEEE2A0938B8002A9DE3 /* Assets.xcassets */,
 				11FDFEF02A0938B8002A9DE3 /* Preview Content */,
 			);
@@ -196,6 +243,7 @@
 			files = (
 				11FDFEF22A0938B8002A9DE3 /* Preview Assets.xcassets in Resources */,
 				11FDFEEF2A0938B8002A9DE3 /* Assets.xcassets in Resources */,
+				116EDAD72A0A9F2700A184C7 /* chaptersData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +266,11 @@
 				11FDFEED2A0938B6002A9DE3 /* ContentView.swift in Sources */,
 				11FDFEEB2A0938B6002A9DE3 /* InductionAppApp.swift in Sources */,
 				116EDAB82A0988A700A184C7 /* MainView.swift in Sources */,
+				116EDAD92A0A9FB800A184C7 /* Chapter.swift in Sources */,
+				116EDADE2A0AA0CB00A184C7 /* ChapterRow.swift in Sources */,
 				116EDACD2A0A92E600A184C7 /* CircleImage.swift in Sources */,
+				116EDADB2A0AA06400A184C7 /* ChapterModelData.swift in Sources */,
+				116EDAE02A0AA3DF00A184C7 /* ChapterList.swift in Sources */,
 				116EDABC2A098D4700A184C7 /* RegisterView.swift in Sources */,
 				116EDABA2A098A0E00A184C7 /* UserRequest.swift in Sources */,
 				116EDAD12A0A939400A184C7 /* FiveKeyValuesView.swift in Sources */,
