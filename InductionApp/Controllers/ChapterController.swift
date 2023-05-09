@@ -11,11 +11,13 @@ import SwiftUI
 class ChapterController {
     func selectChapter(name:String) -> some View {
         switch name {
-           case "HL 5 Key Values":
+            case "HL 5 Key Values":
                return AnyView(FiveKeyValuesView())
-           default:
+            case "The HL Way":
+               return AnyView(HLWayView())
+            default:
                return AnyView(ChapterNotFoundView())
-           }
+        }
     }
     
 }
