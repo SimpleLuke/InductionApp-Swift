@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ChapterList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(chapters) { chapter in
+                    ChapterRow(chapter: chapter)
+                }
     }
 }
 
