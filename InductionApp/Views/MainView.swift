@@ -11,17 +11,17 @@ struct MainView: View {
     var onLogout: () -> Void
     
     var body: some View {
-        VStack{
-            ChapterList()
-            Button("logout"){
-                onLogout()
+        NavigationStack{
+            VStack{
+                ChapterList()
             }
-            .foregroundColor(.white)
-            .frame(width: 300,height: 50)
-            .background(Color.blue)
-            .cornerRadius(10)
+            .navigationBarBackButtonHidden(true)
+            .toolbar{
+                Button("Logout"){
+                    onLogout()
+                }
+            }
         }
-        .navigationBarBackButtonHidden(true)
     }
 }
 
