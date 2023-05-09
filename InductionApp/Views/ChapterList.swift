@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ChapterList: View {
+    private let chapterController = ChapterController()
+    
     var body: some View {
         NavigationView{
             List(chapters) { chapter in
                 NavigationLink{
-                    FiveKeyValuesView()
+                    chapterController.selectChapter(name: chapter.name)
                 } label: {
                     ChapterRow(chapter: chapter)
                 }
