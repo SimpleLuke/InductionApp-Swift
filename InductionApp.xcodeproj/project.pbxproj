@@ -11,17 +11,34 @@
 		116EDAB82A0988A700A184C7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB72A0988A700A184C7 /* MainView.swift */; };
 		116EDABA2A098A0E00A184C7 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB92A098A0E00A184C7 /* UserRequest.swift */; };
 		116EDABC2A098D4700A184C7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDABB2A098D4700A184C7 /* RegisterView.swift */; };
+		116EDACA2A099F2F00A184C7 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB92A098A0E00A184C7 /* UserRequest.swift */; };
+		116EDACB2A09A03A00A184C7 /* User.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAB52A09674500A184C7 /* User.model.swift */; };
+		116EDACD2A0A92E600A184C7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDACC2A0A92E600A184C7 /* CircleImage.swift */; };
+		116EDAD12A0A939400A184C7 /* FiveKeyValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAD02A0A939400A184C7 /* FiveKeyValuesView.swift */; };
 		11FDFEEB2A0938B6002A9DE3 /* InductionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */; };
 		11FDFEED2A0938B6002A9DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */; };
 		11FDFEEF2A0938B8002A9DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FDFEEE2A0938B8002A9DE3 /* Assets.xcassets */; };
 		11FDFEF22A0938B8002A9DE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FDFEF12A0938B8002A9DE3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		116EDAC52A099F1600A184C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11FDFEDF2A0938B6002A9DE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11FDFEE62A0938B6002A9DE3;
+			remoteInfo = InductionApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		116EDAB52A09674500A184C7 /* User.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.model.swift; sourceTree = "<group>"; };
 		116EDAB72A0988A700A184C7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		116EDAB92A098A0E00A184C7 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		116EDABB2A098D4700A184C7 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		116EDAC12A099F1600A184C7 /* UserRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		116EDACC2A0A92E600A184C7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		116EDAD02A0A939400A184C7 /* FiveKeyValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveKeyValuesView.swift; sourceTree = "<group>"; };
 		11FDFEE72A0938B6002A9DE3 /* InductionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InductionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InductionAppApp.swift; sourceTree = "<group>"; };
 		11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		116EDABE2A099F1600A184C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11FDFEE42A0938B6002A9DE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				11FDFEE72A0938B6002A9DE3 /* InductionApp.app */,
+				116EDAC12A099F1600A184C7 /* UserRequestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,8 +84,10 @@
 		11FDFEE92A0938B6002A9DE3 /* InductionApp */ = {
 			isa = PBXGroup;
 			children = (
+				116EDACC2A0A92E600A184C7 /* CircleImage.swift */,
 				11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */,
 				11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */,
+				116EDAD02A0A939400A184C7 /* FiveKeyValuesView.swift */,
 				116EDABB2A098D4700A184C7 /* RegisterView.swift */,
 				116EDAB92A098A0E00A184C7 /* UserRequest.swift */,
 				116EDAB72A0988A700A184C7 /* MainView.swift */,
@@ -82,6 +109,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		116EDAC02A099F1600A184C7 /* UserRequestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 116EDAC72A099F1600A184C7 /* Build configuration list for PBXNativeTarget "UserRequestTests" */;
+			buildPhases = (
+				116EDABD2A099F1600A184C7 /* Sources */,
+				116EDABE2A099F1600A184C7 /* Frameworks */,
+				116EDABF2A099F1600A184C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				116EDAC62A099F1600A184C7 /* PBXTargetDependency */,
+			);
+			name = UserRequestTests;
+			productName = UserRequestTests;
+			productReference = 116EDAC12A099F1600A184C7 /* UserRequestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		11FDFEE62A0938B6002A9DE3 /* InductionApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11FDFEF52A0938B8002A9DE3 /* Build configuration list for PBXNativeTarget "InductionApp" */;
@@ -109,6 +154,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					116EDAC02A099F1600A184C7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 11FDFEE62A0938B6002A9DE3;
+					};
 					11FDFEE62A0938B6002A9DE3 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -128,11 +177,19 @@
 			projectRoot = "";
 			targets = (
 				11FDFEE62A0938B6002A9DE3 /* InductionApp */,
+				116EDAC02A099F1600A184C7 /* UserRequestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		116EDABF2A099F1600A184C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11FDFEE52A0938B6002A9DE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +202,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		116EDABD2A099F1600A184C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116EDACA2A099F2F00A184C7 /* UserRequest.swift in Sources */,
+				116EDACB2A09A03A00A184C7 /* User.model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11FDFEE32A0938B6002A9DE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,15 +218,59 @@
 				11FDFEED2A0938B6002A9DE3 /* ContentView.swift in Sources */,
 				11FDFEEB2A0938B6002A9DE3 /* InductionAppApp.swift in Sources */,
 				116EDAB82A0988A700A184C7 /* MainView.swift in Sources */,
+				116EDACD2A0A92E600A184C7 /* CircleImage.swift in Sources */,
 				116EDABC2A098D4700A184C7 /* RegisterView.swift in Sources */,
 				116EDABA2A098A0E00A184C7 /* UserRequest.swift in Sources */,
+				116EDAD12A0A939400A184C7 /* FiveKeyValuesView.swift in Sources */,
 				116EDAB62A09674500A184C7 /* User.model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		116EDAC62A099F1600A184C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11FDFEE62A0938B6002A9DE3 /* InductionApp */;
+			targetProxy = 116EDAC52A099F1600A184C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		116EDAC82A099F1600A184C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lukelai.UserRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InductionApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InductionApp";
+			};
+			name = Debug;
+		};
+		116EDAC92A099F1600A184C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lukelai.UserRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InductionApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InductionApp";
+			};
+			name = Release;
+		};
 		11FDFEF32A0938B8002A9DE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,6 +444,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		116EDAC72A099F1600A184C7 /* Build configuration list for PBXNativeTarget "UserRequestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116EDAC82A099F1600A184C7 /* Debug */,
+				116EDAC92A099F1600A184C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		11FDFEE22A0938B6002A9DE3 /* Build configuration list for PBXProject "InductionApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
