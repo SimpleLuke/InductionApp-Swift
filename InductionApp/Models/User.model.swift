@@ -11,4 +11,6 @@ struct User: Codable  {
     let name: String
     let email: String
     let joined: String
+    let completed: Array<String>
 }
+

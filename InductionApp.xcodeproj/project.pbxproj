@@ -23,6 +23,7 @@
 		116EDAE22A0AA9A300A184C7 /* ChapterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAE12A0AA9A300A184C7 /* ChapterController.swift */; };
 		116EDAE42A0AAB1100A184C7 /* ChapterNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAE32A0AAB1100A184C7 /* ChapterNotFoundView.swift */; };
 		116EDAE72A0AB1EB00A184C7 /* HLWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAE62A0AB1EB00A184C7 /* HLWayView.swift */; };
+		116EDAE92A0C3FAB00A184C7 /* CompletedChatper.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EDAE82A0C3FAB00A184C7 /* CompletedChatper.model.swift */; };
 		11FDFEEB2A0938B6002A9DE3 /* InductionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */; };
 		11FDFEED2A0938B6002A9DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */; };
 		11FDFEEF2A0938B8002A9DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FDFEEE2A0938B8002A9DE3 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		116EDAE12A0AA9A300A184C7 /* ChapterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterController.swift; sourceTree = "<group>"; };
 		116EDAE32A0AAB1100A184C7 /* ChapterNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterNotFoundView.swift; sourceTree = "<group>"; };
 		116EDAE62A0AB1EB00A184C7 /* HLWayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLWayView.swift; sourceTree = "<group>"; };
+		116EDAE82A0C3FAB00A184C7 /* CompletedChatper.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedChatper.model.swift; sourceTree = "<group>"; };
 		11FDFEE72A0938B6002A9DE3 /* InductionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InductionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FDFEEA2A0938B6002A9DE3 /* InductionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InductionAppApp.swift; sourceTree = "<group>"; };
 		11FDFEEC2A0938B6002A9DE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				116EDADA2A0AA06400A184C7 /* ChapterModelData.swift */,
 				116EDACC2A0A92E600A184C7 /* CircleImage.swift */,
 				116EDAB52A09674500A184C7 /* User.model.swift */,
+				116EDAE82A0C3FAB00A184C7 /* CompletedChatper.model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				116EDACD2A0A92E600A184C7 /* CircleImage.swift in Sources */,
 				116EDADB2A0AA06400A184C7 /* ChapterModelData.swift in Sources */,
 				116EDAE02A0AA3DF00A184C7 /* ChapterList.swift in Sources */,
+				116EDAE92A0C3FAB00A184C7 /* CompletedChatper.model.swift in Sources */,
 				116EDABC2A098D4700A184C7 /* RegisterView.swift in Sources */,
 				116EDABA2A098A0E00A184C7 /* UserRequest.swift in Sources */,
 				116EDAE42A0AAB1100A184C7 /* ChapterNotFoundView.swift in Sources */,

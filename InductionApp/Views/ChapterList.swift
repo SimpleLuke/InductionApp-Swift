@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ChapterList: View {
+    @Binding var user:User
     private let chapterController = ChapterController()
     
     var body: some View {
         NavigationView{
             List(chapters) { chapter in
                 NavigationLink{
-                    chapterController.selectChapter(name: chapter.name)
+                    if(chapter.name == "HL 5 Key Values"){
+                        FiveKeyValuesView(user: $user)
+                    }else if(chapter.name == "The HL Way"){
+                        HLWayView()
+                    }
                 } label: {
                     ChapterRow(chapter: chapter)
                 }
@@ -27,6 +32,6 @@ struct ChapterList: View {
 
 struct ChapterList_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterList()
+        ChapterList(user:.constant(User(id: 1, name: "John Doe", email: "johndoe@example.com", joined: "2023-05-01", completed: [])))
     }
 }

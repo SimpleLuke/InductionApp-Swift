@@ -16,13 +16,13 @@ struct ContentView: View {
     @State private var wrongEmail = 0
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
-    @State var fetchResult = User(id: 0, name: "", email: "", joined: "")
+    @State var fetchResult:User = User(id: 0, name: "", email: "", joined: "",completed:[])
     
     var body: some View {
         if fetchResult.id != 0 {
             MainView(onLogout: {
-                        fetchResult = User(id: 0, name: "", email: "", joined: "")
-                    })
+                        fetchResult = User(id: 0, name: "", email: "", joined: "",completed: [])
+            },user:$fetchResult)
         }else{
             content
         }
