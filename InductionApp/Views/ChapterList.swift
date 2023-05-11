@@ -18,7 +18,7 @@ struct ChapterList: View {
                     if(chapter.name == "HL 5 Key Values"){
                         FiveKeyValuesView(user: $user)
                     }else if(chapter.name == "The HL Way"){
-                        HLWayView()
+                        HLWayView(user:$user)
                     }
                 } label: {
                     ChapterRow(chapter: chapter)
