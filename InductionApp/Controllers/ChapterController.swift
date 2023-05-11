@@ -73,4 +73,30 @@ class ChapterController {
             task.resume()
     }
     
+    func undoChapter(id:Int, chapter_name:String, completion: @escaping (String?, Error?) -> Void) {
+        guard let url = URL(string: "http://localhost:5000/chapters/undo-completed") else {
+            print("Invalid URL")
+            completion(nil, NSError(domain: "Invalid URL", code: 0, userInfo: nil))
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "PATCH"
+
+        let body:[String:Any] = ["id": id, "chapter_name":chapter_name]
+        let jsonData = try! JSONSerialization.data(withJSONObject: body, options: [])
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { data, response, error in
+                if let response = response as? HTTPURLResponse, response.statusCode == 200 {
+                       let message = "Undone"
+                        completion(message, nil)
+                } else {
+                    completion(nil, error)
+                }
+            }
+            task.resume()
+    }
+    
 }
