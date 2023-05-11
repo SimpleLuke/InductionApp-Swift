@@ -21,7 +21,7 @@ struct HLWayView: View {
                     CircleImage(image: Image("the-hl-way"))
                     
                     VStack(alignment: .leading) {
-                        Text("The HL way")
+                        Text("The HL Way")
                             .font(.title)
                         
                         Divider()
