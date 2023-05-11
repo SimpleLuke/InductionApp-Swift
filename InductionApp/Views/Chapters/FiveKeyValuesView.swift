@@ -41,17 +41,17 @@ struct FiveKeyValuesView: View {
                 .frame(width: UIScreen.main.bounds.width)
             }
             Button(isCompleted ? "Completed" : "Mark as completed"){
-                //                    userRequest.registerUser(email: email,name:name, password: password) { message, error in
-                //                        if let message = message {
-                //                            if message == "New user created"{
-                //                                print(message)
-                //                                redirectLogin = true
-                //                            }
-                //                        } else if let error = error {
-                //                            // handle error here
-                //                            print("Error: \(error.localizedDescription)")
-                //                        }
-                //                    }
+                chapterController.completeChapter(id: user.id,chapter_name: "HL 5 Key Values") { message, error in
+                                        if let message = message {
+                                            if message == "Completed"{
+                                                isCompleted = true
+                                                print(message)
+                                            }
+                                        } else if let error = error {
+                                            // handle error here
+                                            print("Error: \(error.localizedDescription)")
+                                        }
+                                    }
             }
             .foregroundColor(.white)
             .frame(width: 300,height: 50)
