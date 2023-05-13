@@ -16,7 +16,7 @@ struct RegisterView: View {
     
     var body: some View {
         if redirectLogin {
-            ContentView()
+            LoginView()
         }else{
             content
         }
@@ -76,7 +76,7 @@ struct RegisterView: View {
                     HStack {
                             Text("Already have an account? Sign in")
                                 .foregroundColor(.gray)
-                            NavigationLink(destination: ContentView()) {
+                            NavigationLink(destination: LoginView()) {
                                 Text("here")
                                     .underline()
                                     .foregroundColor(.blue)

@@ -47,7 +47,7 @@ class ChapterController {
             task.resume()
     }
     
-    func completeChapter(id:Int, chapter_name:String, completion: @escaping (String?, Error?) -> Void) {
+    func completeChapter(user_id:Int, chapter_name:String, completion: @escaping (String?, Error?) -> Void) {
         guard let url = URL(string: "http://localhost:5000/chapters/completed") else {
             print("Invalid URL")
             completion(nil, NSError(domain: "Invalid URL", code: 0, userInfo: nil))
@@ -56,7 +56,7 @@ class ChapterController {
         var request = URLRequest(url: url)
         request.httpMethod = "PATCH"
 
-        let body:[String:Any] = ["id": id, "chapter_name":chapter_name]
+        let body:[String:Any] = ["user_id": user_id, "chapter_name":chapter_name]
         let jsonData = try! JSONSerialization.data(withJSONObject: body, options: [])
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = jsonData
@@ -73,7 +73,7 @@ class ChapterController {
             task.resume()
     }
     
-    func undoChapter(id:Int, chapter_name:String, completion: @escaping (String?, Error?) -> Void) {
+    func undoChapter(user_id:Int, chapter_name:String, completion: @escaping (String?, Error?) -> Void) {
         guard let url = URL(string: "http://localhost:5000/chapters/undo-completed") else {
             print("Invalid URL")
             completion(nil, NSError(domain: "Invalid URL", code: 0, userInfo: nil))
@@ -82,7 +82,7 @@ class ChapterController {
         var request = URLRequest(url: url)
         request.httpMethod = "PATCH"
 
-        let body:[String:Any] = ["id": id, "chapter_name":chapter_name]
+        let body:[String:Any] = ["user_id": user_id, "chapter_name":chapter_name]
         let jsonData = try! JSONSerialization.data(withJSONObject: body, options: [])
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = jsonData

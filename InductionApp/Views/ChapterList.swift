@@ -15,11 +15,7 @@ struct ChapterList: View {
         NavigationView{
             List(chapters) { chapter in
                 NavigationLink{
-                    if(chapter.name == "HL 5 Key Values"){
-                        FiveKeyValuesView(user: $user)
-                    }else if(chapter.name == "The HL Way"){
-                        HLWayView(user:$user)
-                    }
+                    ChapterDetailView(user:$user,chapter:chapter)
                 } label: {
                     ChapterRow(chapter: chapter)
                 }

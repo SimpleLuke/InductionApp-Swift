@@ -1,35 +1,36 @@
 //
-//  ChapterView.swift
+//  ChapterDetailView.swift
 //  InductionApp
 //
-//  Created by Luke Lai on 09/05/2023.
+//  Created by Luke Lai on 13/05/2023.
 //
 
 import SwiftUI
 
-struct FiveKeyValuesView: View {
+struct ChapterDetailView: View {
     private let chapterController = ChapterController()
     @Binding var user:User
     @State private var isCompleted = false;
     @State var completedChapters:CompletedChapter = CompletedChapter(completed: [])
-    let values = [(title: "Put the client first", text: "From the day-to-day exceptional client experience, to the constant improvement of our services, we use client feedback to shape future development. It’s their future in our hands."), (title: "Go the extra mile", text: "For our clients and for each other. We focus on what we need to do, then do it well, taking every opportunity to delight, inspire and reassure."),(title: "Do the right thing", text: "We’re fair, honest and upfront and do the best for our clients. We focus on the long-term. It’s why they trust us, and how we earn their loyalty."),(title: "Make it easy", text: "Savings and investments should be easy to access, understand and do. We make things simple which gives our clients confidence to make important decisions at the right time."),(title: "Do it better", text: "Energetically innovating and improving. When things aren’t working well, we fix them.")]
+    let chapter:Chapter
+    
     var body: some View {
         VStack{
             ScrollView(showsIndicators: true){
                 VStack {
-                    CircleImage(image: Image("5-key-values"))
+                    CircleImage(image:chapter.image)
                     
                     VStack(alignment: .leading) {
-                        Text("The HL way")
+                        Text(chapter.name)
                             .font(.title)
                         
                         Divider()
                         
-                        ForEach(0..<values.count, id: \.self) { index in
+                        ForEach(Array(chapter.description.enumerated()), id: \.1) { index,item in
                             VStack(alignment: .leading){
-                                Text("\(index+1). \(values[index].title)")
+                                Text("\(index+1). \(item.title)")
                                     .font(.title2)
-                                Text(values[index].text)
+                                Text(item.content)
                             }
                             .padding()
                         }
@@ -42,7 +43,7 @@ struct FiveKeyValuesView: View {
             }
             Button(isCompleted ? "Completed" : "Mark as completed"){
                 if(isCompleted){
-                    chapterController.undoChapter(id: user.id,chapter_name: "HL 5 Key Values") { message, error in
+                    chapterController.undoChapter(user_id: user.id,chapter_name: chapter.name) { message, error in
                                             if let message = message {
                                                 if message == "Undone"{
                                                     isCompleted = false
@@ -54,7 +55,7 @@ struct FiveKeyValuesView: View {
                                             }
                                         }
                 }else{
-                    chapterController.completeChapter(id: user.id,chapter_name: "HL 5 Key Values") { message, error in
+                    chapterController.completeChapter(user_id: user.id,chapter_name: chapter.name) { message, error in
                                             if let message = message {
                                                 if message == "Completed"{
                                                     isCompleted = true
@@ -75,7 +76,7 @@ struct FiveKeyValuesView: View {
         .onAppear(){
             chapterController.getCompletedChapters(id: user.id) { chapters, error in
                 if let chapters = chapters {
-                    isCompleted = chapters.completed.contains("HL 5 Key Values")
+                    isCompleted = chapters.completed.contains(chapter.name)
                     print(chapters)
                 } else if let error = error {
                     // handle error here
@@ -86,8 +87,8 @@ struct FiveKeyValuesView: View {
     }
 }
 
-struct FiveKeyValuesView_Previews: PreviewProvider {
-    static var previews: some View {
-        FiveKeyValuesView(user: .constant(User(id: 1, name: "John Doe", email: "johndoe@example.com", joined: "2023-05-01", completed: [])))
-    }
-}
+//struct ChapterDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ChapterDetailView(user: .constant(User(id: 1, name: "John Doe", email: "johndoe@example.com", joined: "2023-05-01", completed: [])),chapter: Chapter(name: "HL 5 Key Values",id: 1,description: [("title":"Put the client first","content":"From the day-to-day exceptional client experience, to the constant improvement of our services, we use client feedback to shape future development. It’s their future in our hands.")],imageName: "5-key-values")
+//    }
+//}

@@ -11,10 +11,15 @@ import SwiftUI
 struct Chapter: Hashable, Codable,Identifiable {
     var id: Int
     var name: String
-    var description: String
+    var description: [ChapterDescriptionItem]
 
     private var imageName: String
     var image: Image {
         Image(imageName)
     }
+}
+
+struct ChapterDescriptionItem: Codable,Hashable {
+    var title: String
+    var content: String
 }
