@@ -8,7 +8,7 @@
   <h3 align="center">Induction iOS App</h3>
 
   <p align="center">
-   An iOS app for induction trainging. [Demo Video](https://drive.google.com/file/d/1s89y0Fxo_lm4oH-bNl4qho52NUcOaSim/view?usp=share_link)
+   An iOS app for induction trainging. 
    
 </div>
 
@@ -38,11 +38,13 @@
 
 ## About The Project
 
-Induction iOS app is a self-motivated SwiftUI project for Hargreaves Lansdown interview.
+Induction iOS app is a self-motivated SwiftUI project for Hargreaves Lansdown interview. 
 
 The iOS app is built with SwiftUI with Swift and served as mobile client for the backend data. (Check the REST API [Here](https://github.com/SimpleLuke/induction-api/edit/main/README.md))
 
 The features include user registration, user login, completing and undo an induction chapter about Hargreaves Lansdown.
+
+You can watch the [Demo Video](https://drive.google.com/file/d/1s89y0Fxo_lm4oH-bNl4qho52NUcOaSim/view?usp=share_link) here.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
