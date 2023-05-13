@@ -8,7 +8,7 @@
   <h3 align="center">Induction iOS App</h3>
 
   <p align="center">
-   An iOS app for induction trainging.
+   An iOS app for induction trainging. [Demo Video](https://drive.google.com/file/d/1s89y0Fxo_lm4oH-bNl4qho52NUcOaSim/view?usp=share_link)
    
 </div>
 
