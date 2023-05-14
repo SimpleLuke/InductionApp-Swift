@@ -28,6 +28,18 @@
         ],
         "imageName": "the-hl-way"
     },
+    {
+        "name": "HL History",
+        "id": 3,
+        "description": [
+            {"title":"1981","content":"Peter Hargreaves and Stephen Lansdown found Hargreaves Lansdown. Providing information to clients on unit trusts and tax planning matters."},
+            {"title":"1998","content":"We launch our Vantage platform."},
+            {"title":"2007","content":"Hargreaves Lansdown floats on London Stock Exchange."},
+            {"title":"2010","content":"We move to purpose built offices in centre of Bristol."},
+            {"title":"Today","content":"We're the #1 investment platform in the UK"},
+        ],
+        "imageName": "hl-history"
+    },
     
 ]
 
