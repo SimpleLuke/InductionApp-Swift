@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img height="600px" src="https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/1ee35c75-cb66-41a6-a00e-21400374359d" />
+  <img height="600px" src="https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/05fa1d91-3a8f-4a69-abaa-bae5bca8bc09" />
 
   <h3 align="center">Induction iOS App</h3>
 
@@ -81,21 +81,21 @@ You can watch the [Demo Video](https://drive.google.com/file/d/1s89y0Fxo_lm4oH-b
 
 - Register an account
 
-  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/82f22372-5569-4872-8486-0f092d411e2b)
+  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/525d2ae4-4381-4b80-bd0d-31302aaac16e)
 
 - Login an account
 
-  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/fd19cc02-d729-48af-a1a7-d34a628f5ad2)
+  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/6f925ee7-fef1-49de-bbb0-935a748c74ef)
 
 - Chapter list
 
-  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/900e9275-1426-4e76-b0de-8c658468bb4c)
+  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/1d0c3348-b4b4-48cf-9912-48d61d3569d8)
 
 - Mark a chapter as completed
 
-  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/8154c2c9-7c6b-44df-866e-a6767122a8b1)
+  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/05fa1d91-3a8f-4a69-abaa-bae5bca8bc09)
 
-  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/b81fda11-b747-4eec-aa6d-80ab72df8422)
+  ![image](https://github.com/SimpleLuke/InductionApp-Swift/assets/89473016/b50a370c-3873-4f02-b36c-2d41909dd6af)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
