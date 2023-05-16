@@ -64,6 +64,8 @@ struct LoginView: View {
                             if let user = user {
                                 fetchResult = user
                                 print(user)
+                                email = ""
+                                password = ""
                             } else if let error = error {
                                 // handle error here
                                 print("Error: \(error.localizedDescription)")
